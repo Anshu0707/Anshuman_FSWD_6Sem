@@ -1,0 +1,18 @@
+<html>
+<head>
+    <h>SWAP</h>
+</head>
+<body>
+     <p id ="first">First Paragraph<p>
+     <p id ="second">Second Paragraph</p>    
+     <input type = "button" onclick = 'swap()' value = 'Swap'><input>
+     </body>
+<script >
+   function swap(){
+       var a;
+       a = document.getElementById('first').innerHTML;
+       document.getElementById('first').innerHTML = document.getElementById('second').innerHTML;
+       document.getElementById('second').innerHTML = a;
+   }
+</script>
+</html>
